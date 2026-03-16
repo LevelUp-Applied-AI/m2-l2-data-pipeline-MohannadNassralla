@@ -13,6 +13,10 @@ import pandas as pd
 import numpy as np
 import pytest
 from pipeline import load_data, clean_data, add_features
+import sys
+import os 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 def test_load_data_returns_dataframe():
     """load_data should return a DataFrame with expected columns and rows."""
